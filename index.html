@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">AI Studio</a>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+<main>
+  <h1>AI Studio — a personal video tool for one YouTube channel</h1>
+  <p class="muted">Công cụ làm video cá nhân, chạy trên máy tính của chủ kênh.</p>
+
+  <p>AI Studio is a private desktop application that runs only on its owner's Windows PC. The owner uses it to make
+  short educational videos and to upload them to <strong>the owner's own YouTube channel</strong> on a schedule
+  that the owner reviews and approves. It is not sold, not distributed and has no other users.</p>
+
+  <div class="yt">
+    <p><strong>Uses YouTube API Services.</strong> AI Studio uses the YouTube Data API v3 to upload videos that the
+    owner created. By using AI Studio you agree to be bound by the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </div>
+
+  <h2>What it does with YouTube</h2>
+  <ul>
+    <li>Signs in with Google OAuth 2.0 and asks for one permission only: <code>youtube.upload</code>.</li>
+    <li>Uploads a finished video with <code>videos.insert</code> (resumable upload) and, for long videos, sets the
+      thumbnail with <code>thumbnails.set</code>.</li>
+    <li>Schedules publishing with YouTube's own <code>publishAt</code> time. Every video is marked as altered or
+      synthetic content (<code>containsSyntheticMedia</code>), with the "made for kids" setting the owner chooses.</li>
+    <li>Nothing is uploaded until the owner approves the batch in the app.</li>
+    <li>It does not read, download, analyse or display any YouTube content, comments, analytics or other users' data.</li>
+  </ul>
+
+  <h2>Your data</h2>
+  <p>Read the <a href="privacy.html">Privacy Policy</a> for what is stored, where, and how to revoke access or ask
+  for deletion, and the <a href="terms.html">Terms of Service</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:baocaosieuthimh@gmail.com">baocaosieuthimh@gmail.com</a></p>
+</main>
+<footer>
+  AI Studio · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> ·
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> ·
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+</footer>
+</body>
+</html>
